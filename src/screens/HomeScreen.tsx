@@ -33,7 +33,7 @@ export default function HomeScreen({ navigation }: HomeScreenProps) {
       } catch (error) {
         console.error('Error fetching BPM data:', error);
       }
-    }, 5000);
+    }, 1000);
     return () => clearInterval(interval);
     
   }, []);

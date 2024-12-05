@@ -2,7 +2,7 @@ import { BPMData } from '../types/bpm';
 
 export async function fetchBPMData(): Promise<BPMData[]> {
   try {
-    const response = await fetch('http://192.168.0.246:3000/api/pulse/latest',{
+    const response = await fetch('http://172.20.10.7:3000/api/pulse/latest',{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export async function fetchBPMData(): Promise<BPMData[]> {
 }
 export async function startGpio(): Promise<void> {
   try {
-    const response = await fetch('http://192.168.0.246:3000/api/raw-data/gpio/start',{
+    const response = await fetch('http://172.20.10.7:3000/api/raw-data/gpio/start',{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
